@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0fff4;
+            color: #26352d;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #dff5e5;
+            padding: 25px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #2f5d46;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2f5d46;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            color: #2f5d46;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 24px;
+            background-color: #79b994;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .btn:hover {
+            background-color: #5e9f79;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2f5d46;
+        }
+
+        .about,
+        .contact {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .project-card h3 {
+            color: #3d7256;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .skill {
+            background-color: #dff5e5;
+            padding: 10px 18px;
+            border-radius: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #dff5e5;
+            padding: 20px;
+            margin-top: 30px;
+            color: #2f5d46;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div>
+                <h2>Hello, I am Sandra Robinson</h2>
+                <p>
+                    Welcome to my portfolio. I am passionate about learning,
+                    creating, and developing new ideas through technology and design.
+                </p>
+
+                <a href="#projects" class="btn">View My Projects</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <div class="about">
+                <p>
+                    I am a student interested in technology, programming, and creative
+                    projects. I enjoy improving my skills and exploring new ideas.
+                    This portfolio showcases some of my work, abilities, and interests.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="projects">
+
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>
+                        Add a short description of your first project here.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>
+                        Add a short description of your second project here.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>
+                        Add a short description of your third project here.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">C Programming</div>
+                <div class="skill">Communication</div>
+                <div class="skill">Creativity</div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <div class="contact">
+                <p>Email: yourname@example.com</p>
+                <p>Location: Your City</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Your Name | My Portfolio</p>
+    </footer>
+
+</body>
+</html>
